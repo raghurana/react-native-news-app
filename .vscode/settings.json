@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "**/node_modules/": true,
+    "**/.expo/": true,
+    "**/dist/": true,
+    "**/npm-debug.*": true,
+    "**/*.jks": true,
+    "**/*.p8": true,
+    "**/*.p12": true,
+    "**/*.key": true,
+    "**/*.mobileprovision": true,
+    "**/*.orig.*": true,
+    "**/web-build/": true,
+    "**/.DS_Store": true
+  }
+}
