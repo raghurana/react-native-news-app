@@ -9,7 +9,7 @@
 - `npm i`
 - `npm start`
 
-Follow the instructions on the screen to run the app on your device or emulator.
+Follow the instructions on the screen to run the app on your device or emulator. Also to run the eslint and prettier checks run `npm run lint` and to auto-fix linting issues run `npm run lint:fix`
 
 ## Description
 

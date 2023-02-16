@@ -1,21 +1,20 @@
-import dateFormat from "dateformat";
-import { StyleSheet } from "react-native";
-import { WebView } from "react-native-webview";
-import { Avatar, Card, Text } from "react-native-paper";
-import { NewsDetailsScreenProps, NewsDetailsRouteProps } from "../../../types";
+import dateFormat from 'dateformat';
+import { StyleSheet } from 'react-native';
+import { WebView } from 'react-native-webview';
+import { Avatar, Card, Text } from 'react-native-paper';
+import { NewsDetailsScreenProps, NewsDetailsRouteProps } from '../../../types';
 
 export const NewsItemCard = ({ item: newsItem, navigation }: NewsDetailsScreenProps) => (
   <Card
     mode="outlined"
     style={NewsItemCardStyles.container}
-    onPress={() => navigation.navigate("NewsDetails", { item: newsItem })}
-  >
+    onPress={() => navigation.navigate('NewsDetails', { item: newsItem })}>
     <Card.Title
       left={(props) => <Avatar.Icon {...props} icon="image" />}
       title={newsItem.title}
       titleStyle={NewsItemCardStyles.titleStyles}
       titleNumberOfLines={Number(3)}
-      subtitle={dateFormat(new Date(newsItem.publishedAt), "dddd dS mmm yyyy @ h:MM TT")}
+      subtitle={dateFormat(new Date(newsItem.publishedAt), 'dddd dS mmm yyyy @ h:MM TT')}
       subtitleStyle={NewsItemCardStyles.subtitleStyles}
     />
     <Card.Cover source={{ uri: newsItem.urlToImage }} />
@@ -33,7 +32,7 @@ const NewsItemCardStyles = StyleSheet.create({
     margin: DEFAULT_MARGIN,
   },
   titleStyles: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
     marginTop: DEFAULT_MARGIN,
   },
   subtitleStyles: {

@@ -1,5 +1,5 @@
-import { RouteProp } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RouteProp } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type NewsItem = {
   author: string;
@@ -31,5 +31,5 @@ export type NewsDetailsScreenProps = NavigationScreenProps & {
 };
 
 export type NewsDetailsRouteProps = {
-  route: RouteProp<RootStackParamList, "NewsDetails">;
+  route: RouteProp<RootStackParamList, 'NewsDetails'>;
 };
